@@ -16,8 +16,8 @@ int  main ( int argc, char * argv [])
     si ((pid = fork ())> 0 )
     {   
         fermer (p [ 0 ]);
-    	// printf ("donne un nombre:");
-    	// atoi (argv [1], "% d", & n);
+    	
+    	
         écrire (p [ 1 ], & n, 100 );
         fermer (p [ 1 ]);
         attendre ( NULL );  
