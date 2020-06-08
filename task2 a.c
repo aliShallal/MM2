@@ -35,7 +35,7 @@ int  main ( int argc, char * argv [])
        addition + = signe / ( 2,0 * i + 1,0 );
         signe * = - 1 ;
     	}
-        printf ( " % lf \ n " , addition 4 *);
+        printf ( " % lf \n " , addition 4 *);
     }  
     return   0 ;
 } 
