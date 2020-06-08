@@ -13,29 +13,29 @@ int  main ( int argc, char * argv [])
     int n = atoi (a);
     if ( pipe (p) < 0 )
         sortie ( 1 );
-    si ((pid = fork ())> 0 )
+    if ((pid = fork ())> 0 )
     {   
-        fermer (p [ 0 ]);
+       close (p [ 0 ]);
     	// printf ("donne un nombre:");
     	// atoi (argv [1], "% d", & n);
-        écrire (p [ 1 ], & n, 100 );
-        fermer (p [ 1 ]);
-        attendre ( NULL );  
+        write (p [ 1 ], & n, 100 );
+        close (p [ 1 ]);
+        wait ( NULL );  
     } 
   
-    sinon  si (pid == 0 )
+    if else if (pid == 0 )
     { 
-        fermer (p [ 1 ]);
+        close (p [ 1 ]);
         // int n;
-        somme flottante ;
-        lire (p [ 0 ], & n, 100 );
+        somme flout ;
+        read (p [ 0 ], & n, 100 );
         signe int = 1 ;
-    	pour ( int i = 0 ; i <n; ++ i)
+    	for ( int i = 0 ; i <n; ++ i)
     	{           
-        somme + = signe / ( 2,0 * i + 1,0 );
+       addition + = signe / ( 2,0 * i + 1,0 );
         signe * = - 1 ;
     	}
-        printf ( " % lf \ n " , somme 4 *);
+        printf ( " % lf \ n " , addition 4 *);
     }  
-    retourner  0 ;
+    return   0 ;
 } 
